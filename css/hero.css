@@ -1,0 +1,25 @@
+.hero {
+  background-image: url("../assets/1.jpg");
+  width: 100vw;
+  z-index: -2 !important;
+  margin-top: 6px;
+  height: calc(100vh - 103px);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: calc(100vh - 103px);
+  width: 100vw;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9)
+  );
+}
