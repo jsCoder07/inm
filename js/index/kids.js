@@ -29,16 +29,16 @@ section{
       >
         We support kids from all over the world running the gamut from kids in Africa to kids in Asia, South and Central America and the middle East
       </p>
-      <div class="h-16 bg-blue-500 xss:h-auto xss:aspect-square"></div>
-      <div class="h-16 bg-blue-500 xss:h-auto xss:aspect-square"></div>
-      <div class="h-16 bg-pink-500 xss:h-auto xss:aspect-square"></div>
+      <div class="h-16 bg-blue-500 xss:h-auto aspect-square"></div>
+      <div class="h-16 bg-blue-500 xss:h-auto aspect-square"></div>
+      <div class="h-16 bg-pink-500 xss:h-auto aspect-square"></div>
       <div
-        class="h-16 bg-blue-500 xss:h-auto xss:aspect-square md:col-start-2"
+        class="h-16 bg-blue-500 xss:h-auto aspect-square md:col-start-2"
       ></div>
-      <div class="h-16 bg-pink-500 xss:h-auto xss:aspect-square"></div>
-      <div class="h-16 bg-blue-500 xss:h-auto xss:aspect-square"></div>
-      <div class="h-16 bg-blue-500 xss:h-auto xss:aspect-square"></div>
-      <div class="h-16 bg-pink-500 xss:h-auto xss:aspect-square"></div>
+      <div class="h-16 bg-pink-500 xss:h-auto aspect-square"></div>
+      <div class="h-16 bg-blue-500 xss:h-auto aspect-square"></div>
+      <div class="h-16 bg-blue-500 xss:h-auto aspect-square"></div>
+      <div class="h-16 bg-pink-500 xss:h-auto aspect-square"></div>
       <p class="self-center md:col-span-2">
         The kids are the future, showing them love, care, and affection today will help make tomorrows world a much better place.
       </p>
