@@ -42,10 +42,7 @@ Footertemplate.innerHTML = `
     padding-bottom: 2px;
   
 }
-footer.footer-1{
- 
-  width:1300px;
-}
+
 </style>
 <section class="aurora-outer overflow-hidden flex items-center justify-center">
       <div class="aurora-inner">
