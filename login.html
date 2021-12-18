@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inmyname.org harnesses the power and identity vested in individuals names to foster birthday or/and anniversary gift and giving in a very unique manner. We make it possible for an individual or entity to give to others on behalf of someone else who may be unsuspecting. For instance, on a birthday, gifts can be sent to a poor/less fortunate child or children who share the same birth date with a loved one, in the name of the loved one.  "
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      @media (min-width: 768px) {
+        h1.filler {
+          min-width: 700px;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <div class="spacer pb-36"></div>
+    <div class="index">
+      <section
+        class="h-screen overflow-hidden flex items-center justify-center"
+      >
+        <div
+          class="
+            sm:mb-10
+            lg:grid lg:grid-cols-5
+            md:grid-cols-none md:bg-gray-100
+            bg-gray-100
+            lg:bg-white lg:h-full
+          "
+        >
+          <div
+            class="
+              px-10
+              py-10
+              max-w-md
+              m-auto
+              lg:col-span-2
+              mt-20
+              mb-20
+              shadow-xl
+              rounded-xl
+              lg:mt-10
+              md:shadow-xl md:rounded-xl
+              lg:rounded-none
+              lg:w-full
+              lg:mb-10
+              lg:px-5
+              lg:pt-5
+              lg:pb-5
+              lg:max-w-xl
+              bg-white
+            "
+          >
+            <img
+              class="h-20 mx-auto md:mx-0"
+              src="assets/logo.png"
+              alt="Workcation logo"
+            />
+            <img
+              class="
+                h-64
+                sm:h-52 sm:w-full sm:object-cover
+                lg:hidden
+                object-center
+                mt-2
+                rounded-lg
+                shadow-2xl
+              "
+              src="assets/bgh3.jpg"
+              alt="Children"
+            />
+
+            <h1 class="text-lg text-gray-600 text-justify pt-2 filler"></h1>
+            <div
+              class="
+                flex
+                items-center
+                border-2
+                py-2
+                px-3
+                rounded-2xl
+                mt-8
+                md:mt-auto
+                mb-4
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                />
+              </svg>
+              <input
+                class="pl-2 outline-none border-none"
+                type="text"
+                name=""
+                id=""
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <input
+                class="pl-2 outline-none border-none"
+                type="text"
+                name=""
+                id=""
+                placeholder="Password"
+              />
+            </div>
+            <button
+              type="submit"
+              class="
+                block
+                w-full
+                md:w-6/12
+                bg-indigo-600
+                mt-4
+                py-2
+                rounded-2xl
+                text-white
+                font-semibold
+                mb-2
+              "
+            >
+              Login
+            </button>
+            <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer"
+              >Forgot Password ?</span
+            >
+          </div>
+
+          <div class="hidden relative lg:block lg:col-span-3">
+            <img
+              class="absolute inset-0 w-full h-full object-cover object-center"
+              src="assets/login.jpg"
+              alt="Child Playing"
+            />
+          </div>
+        </div>
+      </section>
+      <subscribe-sec></subscribe-sec>
+      <footer-sec></footer-sec>
+    </div>
+
+    <script src="js/Components/navigation.js"></script>
+
+    <script src="js/index/subscribe.js"></script>
+    <script src="js/Components/footer.js"></script>
+  </body>
+</html>
