@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inmyname.org harnesses the power and identity vested in individuals names to foster birthday or/and anniversary gift and giving in a very unique manner. We make it possible for an individual or entity to give to others on behalf of someone else who may be unsuspecting. For instance, on a birthday, gifts can be sent to a poor/less fortunate child or children who share the same birth date with a loved one, in the name of the loved one.  "
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      @media (min-width: 768px) {
+        h1.filler {
+          min-width: 700px;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+    <div class="spacer pb-36"></div>
+    <div class="index">
+      <div class="h-screen md:flex">
+        <div
+          class="
+            relative
+            overflow-hidden
+            md:flex md:w-1/2
+            bg-gradient-to-tr
+            from-blue-800
+            to-purple-700
+            i
+            justify-around
+            items-center
+            md:inline-block
+          "
+        >
+          <div class="p-10 lg:p-0">
+            <p class="text-white mt-1">Lets spread the love to the children</p>
+            <button
+              type="submit"
+              class="
+                block
+                w-28
+                bg-white
+                text-indigo-800
+                mt-4
+                py-2
+                rounded-2xl
+                font-bold
+                mb-2
+              "
+            >
+              Read More
+            </button>
+          </div>
+          <div
+            class="
+              absolute
+              -bottom-32
+              -left-40
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+          <div
+            class="
+              absolute
+              -bottom-40
+              -left-20
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+          <div
+            class="
+              absolute
+              -top-40
+              -right-0
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+          <div
+            class="
+              absolute
+              -top-20
+              -right-20
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+        </div>
+        <div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
+          <form class="bg-white">
+            <h1 class="text-gray-800 font-bold text-2xl mb-1">Hello Again!</h1>
+            <p class="text-sm font-normal text-gray-600 mb-7">Welcome Back</p>
+
+            <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+                />
+              </svg>
+              <input
+                class="pl-2 outline-none border-none"
+                type="text"
+                name=""
+                id=""
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <input
+                class="pl-2 outline-none border-none"
+                type="text"
+                name=""
+                id=""
+                placeholder="Password"
+              />
+            </div>
+            <button
+              type="submit"
+              class="
+                block
+                w-full
+                bg-indigo-600
+                mt-4
+                py-2
+                rounded-2xl
+                text-white
+                font-semibold
+                mb-2
+              "
+            >
+              Login
+            </button>
+            <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer"
+              >Forgot Password ?</span
+            >
+          </form>
+        </div>
+      </div>
+      <subscribe-sec></subscribe-sec>
+      <footer-sec></footer-sec>
+    </div>
+
+    <script src="js/Components/navigation.js"></script>
+
+    <script src="js/index/subscribe.js"></script>
+    <script src="js/Components/footer.js"></script>
+  </body>
+</html>
