@@ -1377,6 +1377,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 540px) {
+  .xs\:pb-48 {
+    padding-bottom: 12rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:-mx-1 {
     margin-left: -0.25rem;
@@ -1446,6 +1452,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .sm\:pb-36 {
+    padding-bottom: 9rem;
   }
 
   .sm\:text-center {
