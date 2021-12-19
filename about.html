@@ -9,10 +9,144 @@
       content="Inmyname.org harnesses the power and identity vested in individuals names to foster birthday or/and anniversary gift and giving in a very unique manner. We make it possible for an individual or entity to give to others on behalf of someone else who may be unsuspecting. For instance, on a birthday, gifts can be sent to a poor/less fortunate child or children who share the same birth date with a loved one, in the name of the loved one.  "
     />
     <link rel="stylesheet" href="css/main.css" />
-   
+
     <style>
       body {
         overflow-x: hidden;
+      }
+      @media (min-width: 768px) {
+        h1.filler {
+          min-width: 700px;
+        }
+      }
+    </style>
+    <style>
+      /*remove custom style*/
+      .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+      }
+      .circles li:nth-child(1) {
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+      }
+
+      .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+      }
+
+      .circles li:nth-child(4) {
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+      }
+
+      .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(6) {
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+      }
+
+      .circles li:nth-child(7) {
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+      }
+
+      .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+      }
+
+      .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+      }
+
+      .circles li:nth-child(10) {
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+      }
+      @keyframes animate {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+          border-radius: 0;
+        }
+
+        100% {
+          transform: translateY(-1000px) rotate(720deg);
+          opacity: 0;
+          border-radius: 50%;
+        }
+      }
+      h1 {
+        color: #1a1a1a;
+        font-family: "OakesGroteskBold";
+        font-size: clamp(20px, 20px, 25px);
+        line-height: 50px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.5rem;
+        text-decoration: underline;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        color: #1a1a11;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        white-space: pre-wrap;
+        margin-bottom: 1rem;
       }
     </style>
     <link
@@ -22,6 +156,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/global.css" />
     <title>Document</title>
   </head>
@@ -29,32 +170,166 @@
     <nav-bar></nav-bar>
     <div class="spacer pb-36"></div>
     <div class="index">
-     
-    <div class="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1 lg:-mx-2 xl:-mx-2">
-
-  <div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4">
-    <!-- Column Content -->
-  </div>
-
-  <div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4">
-    <!-- Column Content -->
-  </div>
-
-  <div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4">
-    <!-- Column Content -->
-  </div>
-
-  <div class="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/4 xl:my-2 xl:px-2 xl:w-1/4">
-    <!-- Column Content -->
-  </div>
-
-</div>
+      <div class="min-h-screen md:flex">
+        <div
+          class="
+            relative
+            overflow-hidden
+            md:flex md:w-1/2
+            bg-gradient-to-tr
+            from-blue-800
+            to-purple-700
+            i
+            justify-around
+            items-center
+            md:inline-block
+          "
+        >
+          <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div class="p-10 lg:p-0"></div>
+          <div
+            class="
+              absolute
+              -bottom-32
+              -left-40
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+          <div
+            class="
+              absolute
+              -bottom-40
+              -left-20
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+          <div
+            class="
+              absolute
+              -top-40
+              -right-0
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+          <div
+            class="
+              absolute
+              -top-20
+              -right-20
+              w-80
+              h-80
+              border-4
+              rounded-full
+              border-opacity-30 border-t-8
+            "
+          ></div>
+        </div>
+        <div class="md:w-1/2 justify-center p-10 items-center bg-white">
+          <p data-aos="fade-up">
+            Quoting William Shakespeare as he writes in Romeo and Juliet:
+            “What's in a name? That which we call a rose, by any other name
+            would smell as sweet”. Probably. However, the name Rose now forever
+            elicits thoughts of beauty and sweet smells.
+          </p>
+          <p data-aos="fade-down">
+            The proper question now becomes, what’s a name? According to
+            Merriam-Webster, it is a word or phrase that refers to or that can
+            refer to a specific person, place, or thing. Across the world and
+            over the ages in every clime and culture, great pains are taken in
+            selecting the appropriate name for newborns, with several named
+            after positive prominent members of society such as movie stars,
+            sports icons, religious leaders, etc. Many traditions require women
+            to take the name of their husbands at marriage, whether in a court
+            of law or in traditional marriage, all these suggesting there is a
+            significance in a name. In several religions, prayers are
+            dispatched, and blessings bestowed in a holy name, accentuating the
+            power in names. There is therefore some inherent importance,
+            significance, and power we place in our names that sets us apart
+            even from others that may share the same name. A certain identity
+            and uniqueness that is well guarded and jealously shared. We are
+            proud of our names.
+          </p>
+          <p data-aos="fade-up">
+            We are also mostly proud of our birthdays, spending millions of
+            dollars annually buying gifts and otherwise celebrating this special
+            day for ourselves or loved ones. The Happy Birthday song is one of
+            the most recognized, memorized, and repeated unaltered songs in the
+            world for a reason. Still, most adults admit to not necessarily
+            needing any of the gifts thoughtfully given on their birthdays.
+            Another pair of socks or tie, really?
+          </p>
+          <p data-aos="fade-down">
+            Inmyname.org harnesses the power and identity vested in individuals’
+            names to foster birthday or/and anniversary gift and giving in a
+            very unique manner. We make it possible for an individual or entity
+            to give to others on behalf of someone else who may be unsuspecting.
+            For instance, on a birthday, gifts can be sent to a poor/less
+            fortunate child or children who share the same birth date with a
+            loved one, in the name of the loved one. A donation record and video
+            recording of the child expressing appreciation will be shared with
+            the donor and the loved one to be saved for posterity. This unique
+            concept can be applied beyond individuals to firms, companies, and
+            agencies for all types of anniversaries and significant dates to
+            include religious and cultural holidays. Inmyname.org connects you
+            to vetted needy children worldwide who would otherwise go without
+            any celebration or even recognition of their birthday. Your
+            generosity through your giving will make a world of difference to
+            these wonderful children, and will also make your loved one in whose
+            name you make the donation feel great. Give it a go!
+          </p>
+        </div>
+      </div>
       <subscribe-sec></subscribe-sec>
       <footer-sec></footer-sec>
     </div>
-    
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1200, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: true, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
     <script src="js/Components/navigation.js"></script>
-    
+
     <script src="js/index/subscribe.js"></script>
     <script src="js/Components/footer.js"></script>
   </body>
